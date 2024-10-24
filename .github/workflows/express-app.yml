@@ -1,12 +1,10 @@
 name: Release Node.js app
 
 on:
-  workflow_dispatch:
+  push:
+#  workflow_dispatch:
     branches:
       - main
-#    paths:
-#      - 'express-app/**'
-#      - '.github/workflows/express-app.yml'
 jobs:
   build:
     runs-on: ubuntu-latest
